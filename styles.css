@@ -36,11 +36,12 @@
 }
 
 [data-theme="dark"] {
-  --text: #ecf0f1;
-  --text-light: #bdc3c7;
+  --text: #f9fbfc;
+  --text-light: #ffffff;
   --bg: #1a1a1a;
   --bg-alt: #2d2d2d;
   --secondary: #34495e;
+  --hero-text: #ffffff; /* Specific variable for hero text in dark mode */
   --box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   --box-shadow-hover: 0 12px 30px rgba(0,0,0,0.4);
 }
@@ -230,6 +231,14 @@ nav a:focus::after {
 
 [data-theme="dark"] .hero {
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+[data-theme="dark"] .hero h1 {
+  color: var(--hero-text);
+}
+
+[data-theme="dark"] .hero p {
+  color: var(--text-light);
 }
 
 .hero::before {
