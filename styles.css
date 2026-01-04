@@ -722,7 +722,7 @@ footer {
     top: 70px;
     left: 0;
     right: 0;
-    background: white;
+    /* background: white; */
     flex-direction: column;
     align-items: center;
     padding: var(--spacing-md) 0;
