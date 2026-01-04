@@ -721,22 +721,26 @@ footer {
   /* Mobile nav menu */
   nav ul {
     position: fixed;
-    top: 70px; /* height of header */
+    top: 0;
     left: 0;
     right: 0;
-    background: var(--bg); /* adaptive background for light/dark mode */
+    height: 100vh; /* full screen */
+    background: var(--bg); /* solid adaptive background */
     flex-direction: column;
     align-items: center;
-    padding: var(--spacing-md) 0;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
     transition: var(--transition);
-    z-index: 999; /* ensure it appears on top */
+    z-index: 9999; /* above everything */
   }
 
-  /* When mobile menu is active */
+  /* Active menu */
   nav ul.active {
     transform: translateY(0);
     opacity: 1;
@@ -745,26 +749,28 @@ footer {
 
   /* Menu items spacing */
   nav ul li {
-    margin: var(--spacing-sm) 0;
+    margin: var(--spacing-md) 0;
   }
 
-  /* Menu links color should adapt to theme */
+  /* Menu links */
   nav ul li a {
-    color: var(--text); /* adaptive color for light/dark mode */
+    color: var(--text); /* adaptive for light/dark */
     font-size: var(--font-size-lg);
-    padding: var(--spacing-sm) var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-lg);
     display: block;
+    text-align: center;
   }
 
   nav ul li a:hover,
   nav ul li a:focus {
     color: var(--primary);
-    background-color: rgba(243, 156, 18, 0.1); /* subtle hover */
+    background-color: rgba(243, 156, 18, 0.1);
+    border-radius: var(--border-radius);
   }
 
   /* Theme toggle button inside menu */
   nav ul li .theme-toggle {
-    margin-top: var(--spacing-sm);
+    margin-top: var(--spacing-md);
   }
 
   /* Hamburger lines color adapts to theme */
@@ -789,5 +795,17 @@ footer {
 
   .form-group-full {
     grid-column: span 1;
+  }
+
+  /* Optional: subtle overlay behind menu for more contrast */
+  nav ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.05); /* very light overlay */
+    z-index: -1;
   }
 }
