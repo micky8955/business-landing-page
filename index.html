@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eggcellent Farms | Premium Fresh Eggs</title>
+  <meta name="description" content="Eggcellent Farms delivers premium quality, fresh eggs from our farm to your table. Sustainably sourced, ethically raised, and nutritionally rich eggs.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="Eggcellent Farms Home">
+        <i class="fas fa-egg"></i>
+        Eggcellent Farms
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+
+      <nav role="navigation" aria-label="Main navigation">
+        <ul id="nav-menu">
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#features">Why Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+          <li class="cart-icon">
+            <a href="#" aria-label="Shopping cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count" id="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <h1>Premium Fresh Eggs from Our Farm to Your Table</h1>
+        <p>Experience the difference of farm-fresh eggs from ethically raised, happy hens. Nutritious, delicious, and sustainably sourced.</p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn">Shop Eggs</a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Our Farm Story</h2>
+          <p>Discover what makes our eggs exceptional and how we care for our hens</p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text fade-in">
+            <h3>Committed to Quality & Ethics</h3>
+            <p>At Eggcellent Farms, we believe that great eggs come from happy, healthy hens. Our free-range hens enjoy spacious outdoor areas, natural light, and fresh air every day.</p>
+            <p>We use sustainable farming practices that protect the environment while producing the most nutritious and flavorful eggs possible. Every egg is collected daily and carefully inspected.</p>
+            <p>Our commitment to animal welfare and environmental responsibility ensures you're getting premium quality eggs that you can feel good about serving your family.</p>
+            <a href="#contact" class="btn">Visit Our Farm</a>
+          </div>
+
+          <div class="about-image fade-in">
+            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f8f9fa'/><circle cx='200' cy='150' r='80' fill='%23f39c12' opacity='0.3'/><circle cx='150' cy='120' r='15' fill='%23f39c12'/><circle cx='250' cy='180' r='12' fill='%23f39c12'/><circle cx='180' cy='200' r='10' fill='%23f39c12'/><text x='200' y='160' font-family='Arial' font-size='14' fill='%237f8c8d' text-anchor='middle'>Farm Scene</text></svg>" alt="Eggcellent Farms outdoor hen area with green pasture and natural lighting">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Our Premium Egg Selection</h2>
+          <p>Discover our range of fresh, ethically-sourced eggs</p>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card fade-in">
+            <div class="stock-badge stock-in">In Stock</div>
+            <div class="product-image">
+              <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'><circle cx='75' cy='75' r='60' fill='%23f9e79f'/><circle cx='75' cy='75' r='55' fill='%23f8c471'/><circle cx='65' cy='65' r='8' fill='%23e67e22'/><circle cx='85' cy='85' r='6' fill='%23e67e22'/></svg>" alt="Farm Fresh Eggs - Large brown eggs in natural setting">
+            </div>
+            <h3>Farm Fresh Eggs</h3>
+            <p>Our signature eggs from free-range hens. Rich in flavor and nutrition.</p>
+            <div class="product-price">$4.99/dozen</div>
+            <button class="btn" onclick="addToCart('Farm Fresh Eggs', 4.99)">Add to Cart</button>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="stock-badge stock-in">In Stock</div>
+            <div class="product-image">
+              <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'><circle cx='75' cy='75' r='60' fill='%23d5f4e6'/><circle cx='75' cy='75' r='55' fill='%2385c1a7'/><circle cx='65' cy='65' r='8' fill='%2327ae60'/><circle cx='85' cy='85' r='6' fill='%2327ae60'/></svg>" alt="Organic Eggs - Certified organic eggs with organic certification badge">
+            </div>
+            <h3>Organic Eggs</h3>
+            <p>Certified organic eggs from hens fed organic feed with no pesticides.</p>
+            <div class="product-price">$6.99/dozen</div>
+            <button class="btn" onclick="addToCart('Organic Eggs', 6.99)">Add to Cart</button>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="stock-badge stock-low">Limited Stock</div>
+            <div class="product-image">
+              <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'><circle cx='75' cy='75' r='60' fill='%23e8f8f5'/><circle cx='75' cy='75' r='55' fill='%237fb39f'/><circle cx='65' cy='65' r='8' fill='%231abc9c'/><circle cx='85' cy='85' r='6' fill='%231abc9c'/></svg>" alt="Free-Range Eggs - Eggs from hens with access to outdoor areas">
+            </div>
+            <h3>Free-Range Eggs</h3>
+            <p>From hens with continuous access to outdoor pasture areas.</p>
+            <div class="product-price">$5.99/dozen</div>
+            <button class="btn" onclick="addToCart('Free-Range Eggs', 5.99)">Add to Cart</button>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="stock-badge stock-in">In Stock</div>
+            <div class="product-image">
+              <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'><circle cx='75' cy='75' r='60' fill='%23fdebd0'/><circle cx='75' cy='75' r='55' fill='%23f5b041'/><circle cx='65' cy='65' r='8' fill='%23d35400'/><circle cx='85' cy='85' r='6' fill='%23d35400'/></svg>" alt="Omega-3 Enriched Eggs - Eggs enriched with omega-3 fatty acids">
+            </div>
+            <h3>Omega-3 Enriched Eggs</h3>
+            <p>Enriched with omega-3 fatty acids for enhanced nutrition.</p>
+            <div class="product-price">$7.49/dozen</div>
+            <button class="btn" onclick="addToCart('Omega-3 Enriched Eggs', 7.49)">Add to Cart</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Why Choose Eggcellent Farms?</h2>
+          <p>Discover what sets our eggs apart from the competition</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card fade-in">
+            <div class="feature-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Sustainable Farming</h3>
+            <p>Eco-friendly practices that protect our land, water, and wildlife for future generations.</p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Animal Welfare</h3>
+            <p>Hens raised with respect, care, and access to natural behaviors in spacious environments.</p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Fresh Delivery</h3>
+            <p>Direct from farm to your door with refrigerated delivery to maintain freshness.</p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">
+              <i class="fas fa-apple-alt"></i>
+            </div>
+            <h3>Nutrition First</h3>
+            <p>Higher in vitamins, omega-3s, and protein compared to conventional eggs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>What Our Customers Say</h2>
+          <p>Hear from families and businesses who trust our eggs</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-content">
+              <p>"The difference in taste is incredible. My family can actually taste the quality in these eggs. We'll never go back to store-bought!"</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'><circle cx='25' cy='25' r='20' fill='%23bdc3c7'/><text x='25' y='30' font-family='Arial' font-size='12' fill='%237f8c8d' text-anchor='middle'>SK</text></svg>" alt="Sarah K.">
+              <div class="author-info">
+                <h4>Sarah K.</h4>
+                <p>Home Baker</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-content">
+              <p>"As a restaurant owner, I'm picky about ingredients. These eggs elevate every dish and my customers notice the difference."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'><circle cx='25' cy='25' r='20' fill='%23bdc3c7'/><text x='25' y='30' font-family='Arial' font-size='12' fill='%237f8c8d' text-anchor='middle'>MJ</text></svg>" alt="Michael J.">
+              <div class="author-info">
+                <h4>Michael J.</h4>
+                <p>Restaurant Owner</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-content">
+              <p>"The subscription service is so convenient. Fresh eggs delivered weekly, and I never run out. The quality is consistently excellent."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'><circle cx='25' cy='25' r='20' fill='%23bdc3c7'/><text x='25' y='30' font-family='Arial' font-size='12' fill='%237f8c8d' text-anchor='middle'>ER</text></svg>" alt="Emily R.">
+              <div class="author-info">
+                <h4>Emily R.</h4>
+                <p>Subscribing Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="subscription" id="subscription">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Never Run Out of Fresh Eggs</h2>
+          <p>Subscribe to our weekly or monthly delivery service</p>
+        </div>
+
+        <form class="subscription-form fade-in" id="subscriptionForm">
+          <div class="form-group">
+            <label for="sub-email">Email Address</label>
+            <input type="email" id="sub-email" name="email" required placeholder="Enter your email">
+          </div>
+
+          <div class="frequency-options">
+            <div class="frequency-option active" data-value="weekly" onclick="selectFrequency(this)">
+              Weekly Delivery
+            </div>
+            <div class="frequency-option" data-value="bi-weekly" onclick="selectFrequency(this)">
+              Bi-weekly
+            </div>
+            <div class="frequency-option" data-value="monthly" onclick="selectFrequency(this)">
+              Monthly
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Subscribe Now</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Get In Touch</h2>
+          <p>Have questions? We'd love to hear from you</p>
+        </div>
+
+        <form class="contact-form fade-in" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Eggcellent Farms</h3>
+          <p>Providing premium quality eggs from our farm to your table since 2020.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Farm Road, Countryside</li>
+            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@eggcellentfarms.com</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Business Hours</h3>
+          <ul>
+            <li>Monday-Friday: 8am-6pm</li>
+            <li>Saturday: 9am-4pm</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; <span id="current-year">2026</span> Eggcellent Farms. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
